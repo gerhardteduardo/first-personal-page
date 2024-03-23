@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eduardo Gerhardt</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+  </head>
+
+  <body>
+    <!-- Aba Navegação -->
+    <nav id="desktop-nav">
+      <div class="logo">Eduardo Gerhardt</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiências</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Eduardo Gerhardt</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiências</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Aba Inicial -->
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="profile picture" />
+      </div>
+      <div class="section__text">
+        <!-- Apresentação -->
+        <p class="section__text__p1">Olá! Eu sou</p>
+        <h1 class="title">Eduardo Gerhardt</h1>
+        <p class="section__text__p2"><span class="typing"></span></p>
+        <!-- Curriculo e Contato -->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-eduardo-2024.pdf')">
+            Download CV
+          </button>
+        </div>
+        <!-- Links profissionais -->
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png" alt="LinkedIn profile" class="icon"
+            onclick="location.href='https://www.linkedin.com/in/eduardo-gerhardt/'"/>
+          <img
+            src="./assets/github.png" alt="Github profile" class="icon"
+            onclick="location.href='https://github.com/gerhardteduardo'"/>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='index.html#about'"/>
+    </section>
+
+    <!-- Aba Sobre Mim -->
+    <section id="about">
+      <p class="section__text__p1">Conheça mais</p>
+      <h1 class="title">Sobre mim</h1>
+
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+              <h3>Experiência</h3>
+              <p>2+ anos <br />Software Developer</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon"/>
+              <h3>Formação</h3>
+              <p>Engenharia Física<br />Técnico Mecatrônico</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Sou apaixonado pelos estudos quanto pelo trabalho que desenvolvo. 
+              Busco constantemente superar o meu eu do passado e avançar em 
+              minha trajetória profissional. Estagnar não está presente no meu 
+              vocabulário. Gosto de colaborar em equipe, criar novas conexões e 
+              compartilhar conhecimento e experiência sempre que possível. 
+              Sou participativo e tenho uma abordagem crítica e argumentativa. 
+              Desenvolver softwares inteligentes e seguros é algo que me entusiasma!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gostos Preferidos -->
+    <section id="preferences">
+      <p class="section__text__p1">Veja alguns dos meus</p>
+      <h1 class="title">Gostos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Time -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/team.png" alt="team" class="preferences-img"/>
+            </div>
+            <h2 class="experience-sub-title preferences-title">Time do Coração</h2>
+          </div>
+          <!-- Livro -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/book.png" alt="book" class="preferences-img"/>
+            </div>
+            <h2 class="experience-sub-title preferences-title">Livro Preferido</h2>
+          </div>
+          <!-- Filme -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/movie.png" alt="movie" class="preferences-img"/>
+            </div>
+            <h2 class="experience-sub-title preferences-title">Filme Preferido</h2>
+          </div>
+          <!-- Jogo -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/game.png" alt="game" class="preferences-img"/>
+            </div>
+            <h2 class="experience-sub-title preferences-title">Jogo Preferido</h2>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='index.html#hobbies'"/>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies">
+      <p class="section__text__p1">Veja alguns dos meus</p>
+      <h1 class="title">Hobbies</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Xadrez -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/chess.png" alt="chess" class="preferences-img"/>
+            </div>
+            <h2 class="experience-sub-title preferences-title">Xadrez</h2>
+          </div>
+          <!-- Moto -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/motorcycle.png" alt="motorcycle" class="preferences-img"/>
+            </div>
+            <h2 class="experience-sub-title preferences-title">Viajar de Moto</h2>
+          </div>
+          <!-- Impressão 3D -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/printer.png" alt="printer" class="preferences-img"/>
+            </div>
+            <h2 class="experience-sub-title preferences-title">Impressão 3D</h2>
+          </div>
+          <!-- Pescaria -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/fishing.png" alt="fishing" class="preferences-img"/>
+            </div>
+            <h2 class="experience-sub-title preferences-title">Pescaria</h2>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='index.html#experience'"/>
+    </section>
+
+    <!-- Aba Carreira e Destaque-->
+    <section id="experience">
+      <p class="section__text__p1">Explore minha</p>
+      <h1 class="title">Experiência Profissional</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Carreira</h2>
+            <div class="article-container">
+              <!-- Experiência mais Importante -->
+              <article>
+                <div>
+                  <h3>Altus S.A.</h3>
+                  <p>Desenvolver Pleno</p>
+                  <p>09/2021 - 10/2023</p>
+                  <p>Desenvolvimento de Software Embarcado para Sistema Linux</p>
+                </div>
+              </article>
+              <!-- Experiência Inicial -->
+              <article>
+                <div>
+                  <h3>Crescer Autom.</h3>
+                  <p>Estágiario em Mecatrônica</p>
+                  <p>10/2020 - 06/2021</p>
+                  <p>Desenvolvimento de Software e Hardware</p>
+                </div>
+              </article>
+              <!-- Adicione mais experiências conforme necessário -->
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Destaque</h2>
+            <div class="article-container">
+                <p>Mais de R$ 300.000,00 faturados em uma
+                  única venda com a conclusão bem-sucedida
+                  de um projeto realizado de forma
+                  independente na Altus SA no prazo de três
+                  meses. O projeto teve como objetivo
+                  implementar uma nova funcionalidade para
+                  a linha PLC Nexto, possibilitando ao cliente
+                  configurar um servidor FTP em sistema Linux
+                  em tempo real através de uma página web. A
+                  solução oferece recursos como controle de
+                  usuários, criptografia de dados via SSL e
+                  interface de configuração intuitiva.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Ícone de seta" class="icon arrow" 
+        onclick="location.href='index.html#languages'"/>
+    </section>
+
+    <!-- Aba Linguagens e Objetivos -->
+    <section id="languages">
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Linguagens</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div>
+                  <h3>C</h3>
+                  <p>Avançado</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div>
+                  <h3>C#</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div>
+                  <h3>HTML/CSS</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon"/>
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Objetivos</h2>
+            <div class="article-container">
+              <p>Busco oportunidades que me permitam expandir meu 
+                conhecimento em áreas emergentes, como IoT e 
+                desenvolvimento de softwares inteligentes, onde vejo 
+                um imenso potencial para impactar positivamente a sociedade. 
+                
+                Estou comprometido em cultivar habilidades técnicas sólidas 
+                e em desenvolver uma abordagem crítica e analítica, essenciais 
+                para enfrentar os desafios do mercado atual. Ao mesmo tempo, 
+                desejo colaborar ativamente em equipes multidisciplinares, 
+                compartilhando conhecimento e experiência para impulsionar a 
+                inovação e alcançar resultados extraordinários. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Aba Contato -->
+    <section id="contact">
+      <p class="section__text__p1">Entre em</p>
+      <h1 class="title">Contato</h1>
+      <div class="contact-info-upper-container">
+        <!-- E-mail -->
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+          <p><a href="mailto:eduardo.rocha275@gmail.com">eduardo.rocha275@gmail.com</a></p>
+        </div>
+        <!-- Linkedin -->
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+          <p><a href="https://www.linkedin.com">Eduardo Gerhardt</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experiências</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Eduardo Gerhardt.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
