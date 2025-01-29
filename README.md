@@ -1,4 +1,4 @@
-# 🌐 Primeiro Website Pessoal
+# 🌐 Primeira Página Pessoal
 
 O projeto foi desenvolvido rapidamente sem muito esforço utilizando apenas tecnologias nativas web.
 O objetivo era criar uma página simples de apresentação para um processo seletivo.
@@ -18,11 +18,11 @@ Para visualizar o projeto, siga estes passos:
 2. Navegue até a pasta onde deseja clonar o repositório
 3. Execute o seguinte comando:
 ```bash
-git clone https://github.com/gerhardteduardo/website.git
+git clone https://github.com/gerhardteduardo/first-personal-page.git
 ```
 4. Acesse a pasta do repositório:
 ```bash
-cd website
+cd first-personal-page
 ```
 5. Abra o arquivo index.html no navegador
 
