@@ -1,30 +1,34 @@
+# 🌐 Primeiro Website Pessoal
 
-README
+Este repositório contém a primeira versão do meu website pessoal. O projeto foi desenvolvido rapidamente utilizando apenas tecnologias nativas da web, pois, na época, eu ainda não conhecia frameworks. O objetivo foi criar uma página simples, amigável e funcional para me apresentar em um processo seletivo.
 
-Este é o repositório da minha página pessoal. A página foi desenvolvida com o objetivo de apresentar quem sou e o que faço.
 
-Conteúdo:
+| Seção | Descrição |
+|----------|----------|
+| 🧑 Sobre Mim   | Pequenas curiosidades sobre minha pessoa   |
+| 💼 Experiência   | Destaque para os trabalhos mais relevantes da minha carreira, incluindo um projeto com resultados alcançados. Além disso, apresento as principais linguagens e tecnologias que domino.   |
+| 📬 Contato  | 
+	Informações para contato, seja para oportunidades profissionais, colaborações ou networking.  |
 
-Sobre Mim: Aqui você encontrará uma breve descrição sobre mim, meus interesses, e o que me motiva profissionalmente.
+	
+## 🚀 Como Visualizar a Página Localmente
+Caso queira visualizar minha página pessoal no seu computador, siga estes passos:
 
-Experiência: Nesta seção, destaco meus trabalhos mais importantes de minha carreira e um projeto e seu resultado alcançado. Além de encontrar minhas linguagens de dominio.
-
-Contato: Se você deseja entrar em contato comigo para oportunidades profissionais, colaborações ou apenas para uma conversa, esta seção contém informações sobre como me encontrar.
-
-Como Clonar o Repositório:
-
-Para clonar este repositório e visualizar a página pessoal localmente em seu computador, siga estas etapas:
-Abra o terminal ou prompt de comando.
-Navegue até o diretório onde deseja clonar o repositório.
-Execute o seguinte comando:
-
-bash
+1. Abra o terminal ou prompt de comando em seu computador
+2. Navegue até a pasta onde deseja clonar o repositório
+3. Execute o seguinte comando:
+```bash
 git clone https://github.com/gerhardteduardo/website.git
-Agora você terá uma cópia local do repositório em seu computador. 
-Basta abrir o arquivo index.html em um navegador da web para visualizar a página pessoal.
+```
+4. Acesse a pasta do repositório:
+```bash
+cd website
+```
+5. Abra o arquivo index.html no navegador
 
-Se você tiver alguma dúvida ou sugestão sobre a página, sinta-se à vontade para entrar em contato.
 
-Link para Clonar o Repositório:
+## 🤝 Contribuições & Sugestões
 
-https://github.com/gerhardteduardo/website
+Caso tenha alguma sugestão ou feedback sobre o projeto, sinta-se à vontade para abrir uma issue ou entrar em contato.
+
+🔗 Repositório no GitHub: https://github.com/gerhardteduardo/website
